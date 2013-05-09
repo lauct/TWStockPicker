@@ -26,7 +26,7 @@ def readcsv():
 
     stock_id_dict['TWSE_ID_LIST'] = twse_id_list
     stock_id_dict['GTSM_ID_LIST'] = gtsm_id_list
-    print stock_id_dict
+    # print stock_id_dict
     return stock_id_dict
 
 # debug log
