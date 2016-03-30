@@ -40,7 +40,7 @@ def examine_ipodate(stocks_array):
         response = urllib2.urlopen(stock_url)
         html = response.read()
 
-        soup = BeautifulSoup(html)
+        soup = BeautifulSoup(html, "html.parser")
 
         # IPOdate
         if len(soup.find("span", {"id": ON_MARKET}).text) > 0:
